@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="auto">
+<head>
+  <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+  <link rel="preconnect" href="https://www.google-analytics.com" crossorigin>
+  <script defer src="https://assets.thehtmlproject.com/script/analytics/script.js" data-ga-id="G-4VCCFETV10"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
+  <title>Links - The HTML Project</title>
+  <meta name="description" content="Access The HTML Project from multiple alternate links. Find and share the newest access URL." />
+  <link rel="canonical" href="https://thehtmlproject.com/links" />
+  <meta property="og:title" content="THP Links" />
+  <meta property="og:description" content="Access The HTML Project from multiple alternate links." />
+  <meta property="og:url" content="https://thehtmlproject.com/links" />
+  <meta property="og:image" content="https://assets.thehtmlproject.com/og/cover.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#121212">
+  <link rel="icon" href="https://assets.thehtmlproject.com/icon.jpeg" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,300..900;1,300..900&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <script defer src="https://assets.thehtmlproject.com/script/theme.js"></script>
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
+  <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+  <meta http-equiv="Permissions-Policy" content="geolocation=(), microphone=()" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header" role="banner">
+    <img id="site-logo" src="https://assets.thehtmlproject.com/icon.jpeg" alt="The HTML Project logo" fetchpriority="high" />
+    <h1 class="visually-hidden">THP Links</h1>
+    <button id="darkModeToggle" class="dark-mode-toggle" aria-pressed="false" aria-label="Toggle dark mode" title="Toggle dark mode">
+      <span class="material-symbols-outlined" id="modeIcon">light_mode</span>
+    </button>
+  </header>
+
+  <main class="content-area" role="main">
+    <section class="intro-box" aria-labelledby="introHeading">
+      <h2 id="introHeading">THP Access Links</h2>
+      <p>Below are alternate links you can use to access The HTML Project. The newest link is always recommended for the best experience.</p>
+    </section>
+
+    <section class="newest-link-section" aria-labelledby="newestHeading">
+      <h3 id="newestHeading">Newest Link</h3>
+      <div class="newest-link-display">
+        <span id="newestLinkText" class="newest-link-url">Loading...</span>
+      </div>
+      <div class="newest-link-actions">
+        <button id="copyNewestBtn" class="action-button primary">
+          <span class="material-symbols-outlined" id="copyIcon">content_copy</span>
+          <span class="btn-text" id="copyBtnText">Copy Newest Link</span>
+        </button>
+        <a id="visitNewestBtn" href="#" class="action-button" target="_blank" rel="noopener noreferrer">
+          <span class="material-symbols-outlined">open_in_new</span>
+          <span class="btn-text">Visit Newest Link</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="all-links-section" aria-labelledby="allLinksHeading">
+      <h3 id="allLinksHeading">All Available Links</h3>
+      <ul class="links-list" id="linksList" aria-live="polite">
+        <!-- Links will be populated by JavaScript -->
+      </ul>
+    </section>
+
+    <nav class="back-nav" aria-label="Navigation">
+      <a href="/" class="link-button">
+        <span class="material-symbols-outlined">home</span>
+        <span class="btn-text">Back to Homepage</span>
+      </a>
+    </nav>
+  </main>
+
+  <footer>
+    <p>Made with 💚 by Asher from The HTML Project</p>
+    <a href="/hyperlinks/reportabug/index.html" target="_blank" rel="noopener noreferrer">Report a Bug</a>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
