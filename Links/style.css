@@ -63,7 +63,7 @@ header.header {
   content: '';
   position: absolute;
   width: 0;
-  height: 1.5px;
+  height: 2px;
   display: block;
   margin-top: 2px;
   right: 50%;
@@ -96,7 +96,7 @@ main.content-area {
   box-shadow:0 4px 12px rgba(0,0,0,.05);padding:25px;text-align:center;
 }
 .newest-link-section h3 {
-  color:var(--brand);margin:0 0 16px;font-size:1.3rem;
+  color:var(--fg);margin:0 0 16px;font-size:1.3rem;
 }
 .newest-link-display {
   background:var(--bg);border:1px solid var(--border);border-radius:10px;
